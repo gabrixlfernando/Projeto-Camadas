@@ -123,6 +123,27 @@ namespace Projeto_Camadas
 
                 Image imagem = pbFoto.Image;
                 imagem.Save(urlImagem);
+
+                if (cboTipo.SelectedIndex == 0) 
+                {
+                    funcionario.TpFuncionario = 1;
+                }
+                else if(cboTipo.SelectedIndex == 1)
+                {
+                    funcionario.TpFuncionario = 2;
+                }
+                else if( cboTipo.SelectedIndex == 2)
+                {
+                    funcionario.TpFuncionario = 3;
+                }
+                else
+                {
+                    funcionario.TpFuncionario = 2;
+                }
+
+                funcionarioBLL.CreateFuncionario(funcionario);
+                MessageBox.Show("Funcionario Cadastrado com sucesso!"
+                    , "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -134,6 +155,20 @@ namespace Projeto_Camadas
 
             cboTipo.DisplayMember = "DescricaoTipoFuncionario";
             cboTipo.DataSource = funcionarioBLL.GetTipoFuncionario();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNome.Text = "";
+            txtEmail.Text = "";
+            mskCPF.Text = "";
+            mskTelefone.Text = "";
+            dtpData.Text = "";
+            txtSenha.Text = "";
+            cboSexo.Text = "";
+            cboTipo.Text = "";
+            pbFoto.Image = Properties.Resources.user;
+
         }
     }
 }

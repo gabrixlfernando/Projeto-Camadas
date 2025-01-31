@@ -11,6 +11,7 @@ namespace ProjetoCamadas.BLL
     public class FuncionarioBLL
     {
         FuncionarioDAL funcionario = new FuncionarioDAL();
+       
 
         public FuncionarioDTO AutenticaFuncionario (string nome, string senha)
         {
@@ -26,6 +27,17 @@ namespace ProjetoCamadas.BLL
         public List<TipoFuncionarioDTO> GetTipoFuncionario() 
         {
             return funcionario.GetTipos();
+        }
+
+        public FuncionarioDTO PesquisarFuncionario(int id)
+        {
+            return funcionario.Pesquisar(id);
+        }
+
+
+        public void UpdateFuncionario(FuncionarioDTO user)
+        {
+            funcionario.Update(user);
         }
     }
 }

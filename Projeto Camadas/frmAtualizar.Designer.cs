@@ -55,6 +55,7 @@
             // 
             // cboTipo
             // 
+            this.cboTipo.Enabled = false;
             this.cboTipo.FormattingEnabled = true;
             this.cboTipo.Location = new System.Drawing.Point(223, 366);
             this.cboTipo.Name = "cboTipo";
@@ -63,6 +64,7 @@
             // 
             // cboSexo
             // 
+            this.cboSexo.Enabled = false;
             this.cboSexo.FormattingEnabled = true;
             this.cboSexo.Items.AddRange(new object[] {
             "Masculino;",
@@ -74,22 +76,23 @@
             // 
             // mskTelefone
             // 
+            this.mskTelefone.Enabled = false;
             this.mskTelefone.Location = new System.Drawing.Point(223, 259);
             this.mskTelefone.Name = "mskTelefone";
-            this.mskTelefone.ReadOnly = true;
             this.mskTelefone.Size = new System.Drawing.Size(100, 20);
             this.mskTelefone.TabIndex = 25;
             // 
             // mskCPF
             // 
+            this.mskCPF.Enabled = false;
             this.mskCPF.Location = new System.Drawing.Point(52, 259);
             this.mskCPF.Name = "mskCPF";
-            this.mskCPF.ReadOnly = true;
             this.mskCPF.Size = new System.Drawing.Size(100, 20);
             this.mskCPF.TabIndex = 24;
             // 
             // dtpData
             // 
+            this.dtpData.Enabled = false;
             this.dtpData.Location = new System.Drawing.Point(52, 313);
             this.dtpData.Name = "dtpData";
             this.dtpData.Size = new System.Drawing.Size(100, 20);
@@ -98,6 +101,7 @@
             // btnAtualizar
             // 
             this.btnAtualizar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAtualizar.Enabled = false;
             this.btnAtualizar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.ForeColor = System.Drawing.Color.White;
             this.btnAtualizar.Location = new System.Drawing.Point(54, 407);
@@ -106,6 +110,7 @@
             this.btnAtualizar.TabIndex = 21;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // lblSexo
             // 
@@ -149,9 +154,9 @@
             // 
             // txtSenha
             // 
+            this.txtSenha.Enabled = false;
             this.txtSenha.Location = new System.Drawing.Point(223, 313);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.ReadOnly = true;
             this.txtSenha.Size = new System.Drawing.Size(100, 20);
             this.txtSenha.TabIndex = 17;
             // 
@@ -177,9 +182,9 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(223, 212);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 18;
             // 
@@ -195,9 +200,9 @@
             // 
             // txtNome
             // 
+            this.txtNome.Enabled = false;
             this.txtNome.Location = new System.Drawing.Point(52, 212);
             this.txtNome.Name = "txtNome";
-            this.txtNome.ReadOnly = true;
             this.txtNome.Size = new System.Drawing.Size(100, 20);
             this.txtNome.TabIndex = 19;
             // 
@@ -223,6 +228,7 @@
             // 
             // pbFoto
             // 
+            this.pbFoto.Enabled = false;
             this.pbFoto.Image = global::Projeto_Camadas.Properties.Resources.user;
             this.pbFoto.Location = new System.Drawing.Point(52, 93);
             this.pbFoto.Name = "pbFoto";
@@ -256,6 +262,7 @@
             this.btnBuscar.TabIndex = 30;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // frmAtualizar
             // 
